@@ -1,0 +1,111 @@
+.here{
+    margin: 0 auto;
+    height: auto;
+    width: 40%;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    font-family: "Help Me", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.registration-page .here{
+    top: 100px;
+}
+
+.here label{
+    color: rgb(165, 0, 0);
+    font-family: "Help Me", sans-serif;
+}
+
+.here p{
+    color: rgb(165, 0, 0);
+    font-family: "Help Me", sans-serif;
+}
+
+body{
+    text-align: center;
+    font-family: "Help Me", sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    background-color: black;
+    animation: weird 5s infinite;
+}
+
+.face{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-image: url("AHface.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    animation: face 5s infinite;
+    opacity: 0;
+    z-index: 0;
+}
+
+.there{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-family: "Help Me", sans-serif;
+}
+.here form{
+    width:40%;
+    flex-direction:column;
+    display: flex;
+    font-family: "Help Me", sans-serif;
+}
+
+.here form label {
+    margin: 10px;
+}
+
+.here p{
+    margin: 10px;
+    font-family: "Help Me", sans-serif;
+}
+
+@font-face {
+    font-family: "Help Me";
+    src: url("HelpMe.ttf")
+}
+.here form button{
+    margin-top: 40px;
+    background-color: red;
+    border:1px solid;
+    font-family: "Help Me", sans-serif;
+}
+
+.here label{
+    margin-bottom: 10px;
+}
+
+@keyframes weird{
+    0%,100%{
+        background-color: black;
+    }
+    50%{
+        background-color: red;
+    }
+}
+
+@keyframes face{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
