@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Details/portemon.css">
+    <title>Olen's Portfolio</title>
+</head>
+<body class="portfoliopage">
+    <main class="screen">
+        <div class="top">
+            <section class="name">
+                <h1>Olen's Portfolio</h1>
+                <p>I'm a 3rd year IT student who's curious about a lot of things.
+                I like mobile app development, especially using Flutter
+                and Android Studio. I also enjoy gaming
+                learning new tech, and figuring things out on my own.
+                I'm not an expert yet, but I'm always trying to learn and improve.</p>
+            </section>
+
+            <section class="visual" aria-label="Portfolio visual area">
+            </section>
+        </div>
+
+        <section class="details">
+            <section class="detail-section">
+                <h2>Projects</h2>
+                <div class="list">
+                    <div class="item">
+                        <span class="label">RentA Car</span>
+                        <span class="value">RentA Car is a mobile car rental application
+                            developed for Android using Java and Android Studio,
+                            with UI/UX designed in Figma.
+                            The app allows users to log in,
+                            browse available cars, and make rental bookings.
+                            Built as a solo project, it was recognized with
+                            5th place in a best-app competition,
+                            demonstrating both technical execution and
+                            user-centered design.</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">Watch Your Backs (In Progress)</span>
+                        <span class="value">A community safety reporting
+                            app for schools and public spaces.
+                            It lets users report suspicious activities,
+                            threats, or harassment with evidence attached.
+                            I'm currently working on the concept, documentation,
+                            and development. It's still in progress, but it's
+                            teaching me how to design real solutions for real problems.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="visualGif" aria-label="Portfolio visualGif area">
+            </section>
+
+            <section class="detail-section">
+                <h2>Skills</h2>
+                <div class="list">
+                    <div class="item">
+                        <span class="value">Flutter (beginner to intermediate)</span>
+                    </div>
+                    <div class="item">
+                        <span class="value">Android Studio (basic app development)</span>
+                    </div>
+                    <div class="item">
+                        <span class="value">Java (basics)</span>
+                    </div>
+                    <div class="item">
+                        <span class="value">HTML and CSS (basic)</span>
+                    </div>
+                    <div class="item">
+                        <span class="value">WordPress (basic)</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="glalie-row" aria-label="Glalie images">
+                <section class="visual2Gif" aria-label="Glalie image 1"></section>
+                <section class="visual2Gif" aria-label="Glalie image 2"></section>
+                <section class="visual2Gif" aria-label="Glalie image 3"></section>
+            </div>
+            
+            <section class="detail-section">
+                <h2>Contact</h2>
+                <div class="list">
+                    <div class="item">
+                        <span class="label">Email</span>
+                        <a class="value" href="mailto:olen.lormic@umindanao.edu.ph">olen.lormic@umindanao.edu.ph</a>
+                    </div>
+                    <div class="item">
+                        <span class="label">Phone</span>
+                        <span class="value">09912907596</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="/api/send.php" method="post">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="sender-email">Email</label>
+                    <input id="sender-email" name="email" type="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <p class="form-status" id="form-status" aria-live="polite"></p>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
