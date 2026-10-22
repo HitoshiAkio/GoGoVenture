@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->AltBody = 'Sent with PHPMailer.';
 
         if ($mail->send()) {
-            $_SESSION['email_receipt'] = [
+            $_SESSION['Transcript.php'] = [
                 'name' => $name,
                 'email' => $email,
                 'recipient' => $recipient,
