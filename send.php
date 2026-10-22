@@ -5,7 +5,7 @@ declare(strict_types=1);
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/api/vendor/autoload.php';
 
 session_start();
 
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->AltBody = 'Sent with PHPMailer.';
 
         if ($mail->send()) {
-            $_SESSION['Transcript.php'] = [
+            $_SESSION['email_receipt'] = [
                 'name' => $name,
                 'email' => $email,
                 'recipient' => $recipient,
